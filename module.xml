@@ -1,0 +1,22 @@
+<module xmlns="urn:jboss:module:1.3" name="org.richfaces">
+
+    <resources>
+        <resource-root path="atmosphere-runtime-2.2.0.jar"/>
+        <resource-root path="commons-beanutils-1.9.4.jar"/>
+        <resource-root path="commons-collections-3.2.2.jar"/>
+        <resource-root path="commons-digester-2.1.jar"/>
+        <resource-root path="commons-logging-1.2.jar"/>
+        <resource-root path="cssparser-0.9.14.jar"/>
+        <resource-root path="guava-18.0.jar"/>
+        <resource-root path="richfaces-api-3.3.4.Final.jar"/>
+        <resource-root path="richfaces-impl-jsf2-3.3.4.Final.jar"/>
+        <resource-root path="richfaces-ui-3.3.4.Final.jar"/>
+        <resource-root path="sac-1.3.jar"/>
+    </resources>
+
+    <dependencies>
+        <module name="com.sun.jsf-impl" />
+        <module name="javaee.api" />
+        <module name="javax.faces.api" />
+    </dependencies>
+</module>
