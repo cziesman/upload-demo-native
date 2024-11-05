@@ -98,7 +98,7 @@
             inputFile
         </name>
         <tag-class>
-            com.sun.faces.taglib.html_basic.InputFileTag
+            com.redhat.faces.tag.InputFileTag
         </tag-class>
         <body-content>
             JSP

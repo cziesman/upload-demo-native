@@ -1,7 +1,7 @@
 <!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <%@ taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
 <%@ taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
-<%@ taglib uri="http://redhat.com/jsf/inputfile" prefix="rh"%>
+<%@ taglib uri="/WEB-INF/input_file.tld" prefix="rh"%>
 
 <html xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/jsf/core ">
 <head>

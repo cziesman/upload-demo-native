@@ -34,7 +34,6 @@
             <groupId>com.redhat.faces</groupId>
             <artifactId>input-file-tag</artifactId>
             <version>1.0</version>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>
