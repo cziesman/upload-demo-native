@@ -23,7 +23,7 @@ public class ProcessDatFileBean {
 
     private List<UploadedImage> files = new ArrayList<>();
 
-    private String displayMessage;
+    private String displayMessage = "";
 
     private boolean uploadSuccessful = false;
 
@@ -39,7 +39,7 @@ public class ProcessDatFileBean {
         stream.write(getFiles().get((Integer) object).getData());
     }
 
-    public void uploadFile() {
+    public String uploadFile() {
 
         LOG.info("{}", uploadedFile.getName());
         LOG.info("{}", uploadedFile.getSubmittedFileName());
@@ -72,6 +72,9 @@ public class ProcessDatFileBean {
         files.add(file);
 
         uploadSuccessful = true;
+        displayMessage = uploadedFile.getSubmittedFileName() + " was uploaded!";
+
+        return "success";
     }
 
     public String clearUploadData() {

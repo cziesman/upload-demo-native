@@ -23,9 +23,20 @@
             <id>jboss</id>
             <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
         </repository>
+        <repository>
+            <id>jboss2</id>
+            <url>https://repository.jboss.org/nexus/content/repositories/developer/</url>
+        </repository>
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>com.redhat.faces</groupId>
+            <artifactId>input-file-tag</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -34,21 +45,15 @@
         </dependency>
 
         <dependency>
-            <groupId>org.richfaces.framework</groupId>
-            <artifactId>richfaces-impl-jsf2</artifactId>
-            <version>3.3.4.Final</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.richfaces.ui</groupId>
-            <artifactId>richfaces-ui</artifactId>
-            <version>3.3.4.Final</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>javax.faces</groupId>
             <artifactId>jsf-api</artifactId>
             <version>1.2_15</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-impl</artifactId>
+            <version>1.2.15.b01-redhat-12</version>
             <scope>provided</scope>
         </dependency>
 

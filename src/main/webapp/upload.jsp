@@ -1,6 +1,7 @@
 <!doctype html public "-//w3c//dtd html 4.0 transitional//en">
 <%@ taglib uri="http://java.sun.com/jsf/core" prefix="f"%>
 <%@ taglib uri="http://java.sun.com/jsf/html" prefix="h"%>
+<%@ taglib uri="http://redhat.com/jsf/inputfile" prefix="rh"%>
 
 <html xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/jsf/core ">
 <head>
@@ -12,7 +13,7 @@
     <h:form enctype="multipart/form-data">
         <h:panelGrid columns="2" cellpadding="2" cellspacing="2" styleClass="sectionHeaderTable">
             <h:panelGrid columns="1" rendered="#{selectedExamBean.selectedExam != null and selectedExamBean.exam.rowCount > 0}" styleClass="sectionHeaderTable" width="100%" cellpadding="4" cellspacing="4">
-                <h:inputFile value="#{processDatFileBean.uploadedFile}" required="true"/>
+                <rh:inputFile value="#{processDatFileBean.uploadedFile}" required="true"/>
                 <h:outputText id="friendlyMsg" value="File to upload can be found at: c:\\cetarsanswers\\exam.dat or" styleClass="uploadText"/>
                 <h:outputText id="friendlyMsg2" value="c:\\Users\\Public\\Documents\\cetarsanswers\\exam.dat" styleClass="uploadText"/>
             </h:panelGrid>
